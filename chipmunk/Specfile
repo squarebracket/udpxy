@@ -11,8 +11,8 @@ Release: %{release}
 Summary: Udpxy
 Group: Development/Tools
 License: None
-Source: https://github.com/pcherenkov/udpxy
-Packager: Pavel Cherenkov <pcherenkov@gmail.com>
+Source: https://github.com/squarebracket/udpxy
+Packager: Chuck Wilson <chuck.wilson+github@gmail.com>
 Requires: glibc >= 2.14
 Autoreq: 0
 Autoprov: 0
