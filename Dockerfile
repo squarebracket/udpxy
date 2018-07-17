@@ -2,4 +2,5 @@ FROM gcc:latest
 ADD ./chipmunk /udpxy
 WORKDIR /udpxy
 RUN make && make install
-CMD udpxy -T -v -p 80
+ENV PORT=80
+CMD udpxy -T -v -p $PORT
