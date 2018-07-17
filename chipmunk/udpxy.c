@@ -588,13 +588,13 @@ relay_traffic( int ssockfd, int dsockfd, struct server_ctx* ctx,
             if( 0 != rc ) break;
         }
 
-        data = calloc(0, data_len);
+        data = calloc(data_len, sizeof(char));
         if( NULL == data ) {
             mperror( g_flog, errno, "%s: malloc", __func__ );
             break;
         }
 
-        output = calloc(0, data_len);
+        output = calloc(data_len, sizeof(char));
         if( NULL == output ) {
             mperror( g_flog, errno, "%s: malloc", __func__ );
             break;
