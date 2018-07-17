@@ -238,5 +238,8 @@ Build 24 (6-Dec-2016)
     (*) Added Specfile for RPM building via Makefile
     (*) Adding .gitignore file
 
+Build 25 (17-Jul-2018)
+    (*) Add support for MPEG-TS program filtering
+
 # __EOF__
 
