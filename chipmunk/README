@@ -74,7 +74,7 @@ connection.
 
 The command to relay traffic is in the format as below:
 
-http://<address>:<port>/<cmd>/[src_address@]<mgroup_address><sep><mgroup_port>/
+http://<address>:<port>/<cmd>/[src_address@]<mgroup_address><sep><mgroup_port>/[program]
 
 sep ::= :|%|~|+|-|^
 i.e:
@@ -95,6 +95,9 @@ and [src_address@]mgroup_address:mgroup_port identify the multicast group
 Using 'udp' command will instruct udpxy to probe for known types of payload
 (such as MPEG-TS and RTP over MPEG-TS); using 'rtp' makes udpxy assume RTP
 over MPEG-TS payload, thus skipping the probes.
+
+If given a program, only that program's streams (as identified in the PMT)
+will be passed along to the output.
 
 udpxy will start a 'client' process for each new relay request as long as
 their number would not exceed a pre-set maximum (see usage summary).
